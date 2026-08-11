@@ -37,6 +37,10 @@ abstract class Migration extends AbstractMigration
         $this->throwIrreversibleMigrationException();
     }
 
+    /**
+     * @param mixed[] $params
+     * @param mixed[] $types
+     */
     protected function addUnsafeSql(string $sql, array $params = [], array $types = [], ?int $statementTimeout = null): void
     {
         if (null !== $statementTimeout) {

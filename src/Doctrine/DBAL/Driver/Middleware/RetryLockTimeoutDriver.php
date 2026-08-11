@@ -18,7 +18,7 @@ final class RetryLockTimeoutDriver extends AbstractDriverMiddleware
     }
 
     public function connect(
-        #[\SensitiveParameter] array $params
+        #[\SensitiveParameter] array $params,
     ): RetryLockTimeoutConnection {
         return new RetryLockTimeoutConnection(parent::connect($params), $this->logger);
     }
