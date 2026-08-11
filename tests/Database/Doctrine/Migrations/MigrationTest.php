@@ -336,6 +336,10 @@ class TestMigration extends Migration
         throw new \Exception('Unused for this test');
     }
 
+    /**
+     * @param mixed[] $params
+     * @param mixed[] $types
+     */
     public function addUnsafeSql(string $sql, array $params = [], array $types = [], ?int $statementTimeout = null): void
     {
         parent::addUnsafeSql($sql, $params, $types, $statementTimeout);

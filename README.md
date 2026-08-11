@@ -14,7 +14,7 @@ Because SQL migrations can execute heavy queries on database which can slow down
 
 ## ⚙️ Config
 
-_*For a Symfony > 6.x_
+_*For Symfony 6.4, 7.x or 8.x, with Doctrine DBAL 3 or 4_
 
 Install in your project 
 
