@@ -18,10 +18,8 @@ jobs:
       matrix:
         include:
           # --prefer-lowest keeps DBAL 3 covered; every other row resolves to DBAL 4.
-          - php: 8.1
+          - php: 8.3
             composer_update_flags: --prefer-lowest
-          - php: 8.1
-          - php: 8.2
           - php: 8.3
           # Symfony 8 needs PHP 8.4, so this is where that support is actually exercised.
           - php: 8.4
