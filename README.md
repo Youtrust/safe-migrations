@@ -14,9 +14,9 @@ Because SQL migrations can execute heavy queries on database which can slow down
 
 ## ⬆️ Upgrading from `yousign/safe-migrations`
 
-This package was published as `yousign/safe-migrations` up to v1.0.6, under the `Yousign\SafeMigrations\`
+This package was published as `yousign/safe-migrations` up to v1.0.7, under the `Yousign\SafeMigrations\`
 namespace. Following the company rename to Youtrust, v2.0.0 moves to `youtrust/safe-migrations` and the
-`Youtrust\SafeMigrations\` namespace. There is no functional change between v1.0.6 and v2.0.0.
+`Youtrust\SafeMigrations\` namespace. There is no functional change between v1.0.7 and v2.0.0.
 
 ```shell
 $ composer remove yousign/safe-migrations
