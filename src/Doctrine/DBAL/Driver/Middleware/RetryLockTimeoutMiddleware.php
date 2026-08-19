@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yousign\SafeMigrations\Doctrine\DBAL\Driver\Middleware;
+namespace Youtrust\SafeMigrations\Doctrine\DBAL\Driver\Middleware;
 
 use Doctrine\DBAL\Driver;
 use Doctrine\DBAL\Driver\Middleware;
