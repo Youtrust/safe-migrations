@@ -12,6 +12,25 @@ Make your migrations safe
 
 Because SQL migrations can execute heavy queries on database which can slow down your application.
 
+## ⬆️ Upgrading from `yousign/safe-migrations`
+
+This package was published as `yousign/safe-migrations` up to v1.0.6, under the `Yousign\SafeMigrations\`
+namespace. Following the company rename to Youtrust, v2.0.0 moves to `youtrust/safe-migrations` and the
+`Youtrust\SafeMigrations\` namespace. There is no functional change between v1.0.6 and v2.0.0.
+
+```shell
+$ composer remove yousign/safe-migrations
+$ composer req youtrust/safe-migrations:^2.0
+```
+
+Then replace every `Yousign\SafeMigrations\` prefix with `Youtrust\SafeMigrations\`. Two spots are easy to
+miss because they live in configuration rather than in PHP code:
+
+- the middleware service id in `services.yaml`
+- the `use` statement in your `migration.php.tpl` template
+
+`yousign/safe-migrations` is now abandoned and only receives security fixes.
+
 ## ⚙️ Config
 
 _*For Symfony 6.4, 7.x or 8.x, with Doctrine DBAL 3 or 4_
@@ -19,7 +38,7 @@ _*For Symfony 6.4, 7.x or 8.x, with Doctrine DBAL 3 or 4_
 Install in your project 
 
 ```shell
-$ composer req yousign/safe-migrations
+$ composer req youtrust/safe-migrations
 ```
 
 Declare the Middleware in your `services.yaml`
@@ -29,7 +48,7 @@ parameters:
   env(ENABLE_RETRY_LOCK_TIMEOUT): false
   
 services:
-  Yousign\SafeMigrations\Doctrine\DBAL\Driver\Middleware\RetryLockTimeoutMiddleware:
+  Youtrust\SafeMigrations\Doctrine\DBAL\Driver\Middleware\RetryLockTimeoutMiddleware:
     $isEnabled: '%env(bool:ENABLE_RETRY_LOCK_TIMEOUT)%'
 ```
 
@@ -43,7 +62,7 @@ declare(strict_types=1);
 namespace <namespace>;
 
 use Doctrine\DBAL\Schema\Schema;
-use Yousign\SafeMigrations\Doctrine\Migration;
+use Youtrust\SafeMigrations\Doctrine\Migration;
 
 class <className> extends Migration
 {

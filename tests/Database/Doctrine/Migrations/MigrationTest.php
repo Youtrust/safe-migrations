@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yousign\SafeMigrations\Tests\Database\Doctrine\Migrations;
+namespace Youtrust\SafeMigrations\Tests\Database\Doctrine\Migrations;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Schema\Schema;
@@ -12,7 +12,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use Yousign\SafeMigrations\Doctrine\Migration;
+use Youtrust\SafeMigrations\Doctrine\Migration;
 
 final class MigrationTest extends TestCase
 {

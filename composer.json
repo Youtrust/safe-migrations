@@ -1,26 +1,26 @@
 {
-    "name": "yousign/safe-migrations",
+    "name": "youtrust/safe-migrations",
     "description": "Make your migrations safe",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Benoit Galati",
-            "email": "benoit.galati@yousign.com"
+            "email": "benoit.galati@youtrust.com"
         },
         {
             "name": "Nicolas Dousson",
-            "email": "nicolas.dousson@yousign.com"
+            "email": "nicolas.dousson@youtrust.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Yousign\\SafeMigrations\\": "src"
+            "Youtrust\\SafeMigrations\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yousign\\SafeMigrations\\Tests\\": "tests"
+            "Youtrust\\SafeMigrations\\Tests\\": "tests"
         }
     },
     "config": {

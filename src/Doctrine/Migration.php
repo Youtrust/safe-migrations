@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yousign\SafeMigrations\Doctrine;
+namespace Youtrust\SafeMigrations\Doctrine;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Schema\Schema;
