@@ -29,7 +29,8 @@ miss because they live in configuration rather than in PHP code:
 - the middleware service id in `services.yaml`
 - the `use` statement in your `migration.php.tpl` template
 
-`yousign/safe-migrations` is now abandoned and only receives security fixes.
+`yousign/safe-migrations` is abandoned and no longer maintained. It will receive no further
+release of any kind, security fixes included. Upgrade to `youtrust/safe-migrations`.
 
 ## ⚙️ Config
 
